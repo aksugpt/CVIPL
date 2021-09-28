@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="card.css">
+    
+    <title>Click Vision</title>
+</head>
+<body>
+    <!-- responsive navbar starts here -->
+<nav role="navigation">
+    <div id="menuToggle">
+      <input type="checkbox" />
+      <span></span>
+      <span></span>
+      <span></span>
+      <ul id="menu">
+        <a href="index.html"><img src="image/main-logo.png" class="img-fluid" alt="Responsive image"></a>
+        <a href="index.html"><li>Home</li></a>
+        <a href="solution.html"><li>Solutions</li></a>
+        <a href="product.html"><li>Product</li></a>
+        <a href="contactus.html"><li>Contact</li></a>
+        <a href="about.html"><li>About Us</li></a>
+      </ul>
+    </div>
+  </nav>
+    <!-- responsive navbar ends here -->
+    <div class="nav-head d-flex">
+        <h6><i class="fas fa-map-marker-alt mr-2"></i> Birgunj-24, Parsa, Near Bajarang Cinema (Nepal)</h6>
+        <h6><i class="fas fa-envelope-square mr-2"></i> trade.cvi@gmail.com</h6>
+        <h6><i class="fas fa-phone-alt mr-2"></i>9802929313,  9802727699, 9802929101</h6>
+        <div class="dropdown">
+            <button class="btn btn-warning dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Birgunj
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">Birgunj</a>
+              <a class="dropdown-item" href="#">Kathmandu</a>
+            </div>
+          </div>
+    </div>
+
+        <div class="navbar navbar-expand-lg navbar-light bg-light d-flex justify-content-between pt-0 pb-0 sticky-top">
+           
+            <div class="navbar-brand">
+                <a href="index.html"><img src="image/main-logo.png" class="img-fluid" alt="Responsive image"></a>
+            </div>
+            <ul class="navbar-nav d-flex" id="nav-slide" onclick="toggleSidebar()">
+                <li class="navbar-item p-2">
+                    <a href="index.html" class="navbar-link p-2">Home</a>
+                </li>
+                <li class="navbar-item p-2">
+                    <a href="solution.html" class="navbar-link p-2">Solutions</a>
+                </li>
+                <li class="dropdown navbar-item">
+                    <button class="dropbtn p-2">Product </button>
+                    <ul class="dropdown-content bg-white">  
+                      <li><a class=" text-danger text-capitalize font-weight-bold" href="conink.html">CIJ Continious Inkject</a>
+                         <ul class="sub-menu1">
+                             <li><img src="image/menu.jpg" class="img-fluid" alt="Responsive image"></li>
+                             <li><a class=" text-danger text-capitalize" href="8800.html"><i class="fas fa-arrow-right"></i> LINX 8800</a></li>
+                             <li><a class=" text-danger text-capitalize" href="8900.html"><i class="fas fa-arrow-right"></i> linx 8900</a></li>
+                             <li><a class=" text-danger text-capitalize" href="7900.html"><i class="fas fa-arrow-right"></i> linx 7900 series</a></li>
+                         </ul>
+                      </li>
+                      <!-- <li><a class=" text-danger text-capitalize font-weight-bold" href="thermalInkjet.html">TIJ(Thermal Inkjet)</a>
+                        <ul class="sub-menu2">
+                            <li><img src="image/tij.jpg" class="img-fluid" alt="Responsive image"></li>
+                            <li><a class=" text-danger text-capitalize" href="#"><i class="fas fa-arrow-right"></i> poly tij s1i</a></li>
+                             <li><a class=" text-danger text-capitalize" href="#"><i class="fas fa-arrow-right"></i> pjs 1000 series</a></li>
+                        </ul>
+                      </li> -->
+                      <li><a class=" text-danger text-capitalize font-weight-bold" href="laserTechnology.html">laser technology</a>
+                        <ul class="sub-menu3">
+                            <li><img src="image/laser.jpg" class="img-fluid" alt="Responsive image"></li>
+                            <li><a class=" text-danger text-capitalize" href="sl3.html"><i class="fas fa-arrow-right"></i> linx SL3</a></li>
+                             <li><a class=" text-danger text-capitalize" href="csl10.html"><i class="fas fa-arrow-right"></i> linx CSL 10</a></li>
+                             <li><a class=" text-danger text-capitalize" href="csl30.html"><i class="fas fa-arrow-right"></i> linx CSL 30</a></li>
+                             <li><a class=" text-danger text-capitalize" href="cls60.html"><i class="fas fa-arrow-right"></i> linx CSL 60</a></li>
+                             <li><a class=" text-danger text-capitalize" href="fls.html"><i class="fas fa-arrow-right"></i> linx FSL20 & FSL50</a></li>
+                        </ul>
+                      </li>
+                      <li><a class=" text-danger text-capitalize font-weight-bold" href="thermalTransfer.html">TTO Technology</a>
+                        <ul class="sub-menu4">
+                            <li><img src="image/tto.jpg" class="img-fluid" alt="Responsive image"></li>
+                            <li><a class=" text-danger text-capitalize" href="tt500.html"><i class="fas fa-arrow-right"></i> linx TT 500</a></li>
+                             <li><a class=" text-danger text-capitalize" href="tt750.html"><i class="fas fa-arrow-right"></i> linx TT 750</a></li>
+                             <li><a class=" text-danger text-capitalize" href="tt1000.html"><i class="fas fa-arrow-right"></i> linx TT 1000</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+               </li>
+                <li class="navbar-item p-2">
+                    <a href="contactus.html" class="navbar-link p-2">Contact</a>
+                </li>
+                <li class="dropdown-drop navbar-item">
+                    <button class="drop-btn p-2">About Us</button>
+                    <ul class="dropdown-content-drop">
+                      <li class="drop-sub"><a class="text-capitalize text-danger text-center font-weight-bold" href="#"><img src="image/logo.png" class="img-fluid sub-logo" alt="Responsive image"> <span class="click-vision"></span></a>
+                          <ul class="sub-menu5">
+                              <li><img src="image/menu.jpg" class="img-fluid" alt="Responsive image">
+                                  <h6 class="text-capitalize text-danger text-center">Click Vision at creative environment</h6>
+                              </li> 
+                          </ul>
+                      </li>
+                      <li class="drop-sub"><a class="text-danger font-weight-bold" href="#"><span class="about-company"></span> </a>
+                        <ul class="sub-menu6">
+                            <li><a class="text-danger" href="about.html"><i class="fas fa-briefcase"></i> Company Overview</a></li> 
+                            <li><a class="text-danger" href="#"><i class="fas fa-history"></i> Click Vision history</a></li>
+                            <li><a class="text-danger" href="#"><i class="fas fa-chart-line"></i> Vision and Mission</a></li>
+                        </ul>
+                      </li>
+                      <li class="drop-sub"><a class="text-danger font-weight-bold" href="#"><span class="Carrier"></span> </a>
+                          <ul class="sub-menu7">
+                              <li><a class="text-danger" href="#"><i class="fas fa-arrow-right"></i> Job Listing</a></li>
+                          </ul>
+                      </li>
+                      <li class="drop-sub"><a class="text-danger font-weight-bold" href="#"><span class="other"></span> </a>
+                        <ul class="sub-menu8">
+                            <li><a class="text-danger" href="lease.html"><i class="fas fa-dollar-sign"></i> lease</a></li>
+                            <li><a class="text-danger" href="ewaste.html"><i class="fas fa-recycle"></i> E-waste</a></li>
+                            <li><a class="text-danger" href="support.html"><i class="fas fa-question"></i> Support</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                </li>
+                <li class="navbar-item p-2">
+                    <a href="https://www.facebook.com/cvipl" class="navbar-link p-2"><i class="fab fa-facebook-f"></i></a>
+                </li>
+                <li class="navbar-item p-2">
+                    <a href="index.html" class="navbar-link p-2"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li class="navbar-item p-2">
+                    <a href="index.html" class="navbar-link p-2"><i class="fab fa-linkedin-in"></i></a>
+                </li>
+                <!-- <form class="form-inline search-bar my-2 my-lg-0 pl-2">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">Search</button>
+                  </form> -->
+            </ul>  
+        </div>
+        <!-- <div class="brand-logo">
+            <a href="index.html"><img src="image/main-logo.png" class="img-fluid" alt="Responsive image"></a>
+        </div> -->
+            
+<!-- video section starts here -->
+  <div class="container-fluid">
+    <video autoplay muted loop id="myVideo">
+        <source src="video/cover-video.mp4" type="video/mp4">
+      </video>
+  </div>
+<!-- video sections ends here -->
+
+  <!-- Printing Technology section -->
+  <div class="container">
+    <section class="printing-wrapper mb-5">
+        <div class="printing-custom-head mt-5 mb-4">
+            <h1 class="text-capitalize text-primary text-center">Printing Technology</h1>
+        </div>
+        <div class="printing-custom-para text-center">
+            <p class="text-justify text-center">As a well established marking and coding solutions provider, we ensure our superiority
+                <br>
+                in quality and our services by making use of only the best in industrial
+                <br>
+                standard machinery for all our printing and coding needs..</p>
+        </div>
+    </section>
+    <section class="services">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                <div class="service-card" >
+                    <a href="conink.html"><img class="card-img-top" src="image/cijtech_thumbnail-small-ima-740x440.jpg" alt="Card image cap"></a>
+                    <div class="service-card-body">
+                      <a class="service-card-head" href="conink.html"><h5><span class="service-card-title text-capitalize">Continuous Inkjet Printers</span> </h5></a>
+                     <a href="conink.html"><p class="service-card-text text-justify">Continuous Ink Jet systems (CIJ) work by expelling electrically charged ink droplets from a printhead nozzle and passing them through an electric field. The ink jet is broken into drops inside the chamber through a pulse from the piezoelectric crystal.</p></a> 
+                      <a class="service-card-btn" href="conink.html">Read More <i class="fas fa-chevron-right ml-1"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                <div class="service-card" >
+                    <a href="laserTechnology.html"><img class="card-img-top" src="image/lasertech_thumbnail-small-i-740x440.jpg" alt="Card image cap"></a>
+                    <div class="service-card-body">
+                      <a class="service-card-head" href="laserTechnology.html"><h5><span class="service-card-title text-capitalize">Laser Technology</span> </h5></a>
+                      <a href="laserTechnology.html"><p class="service-card-text text-justify">The technology is perfect for high volumes of printing and creating easy traceability on food, drink and pharmaceutical products. A concentrated beam of light is deflected by mirrors through a lens to form characters by removing material or coating from the product or packaging..</p></a>
+                      <a class="service-card-btn" href="laserTechnology.html">Read More <i class="fas fa-chevron-right ml-1"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                <div class="service-card" >
+                    <a href="thermalInkjet.html"><img class="card-img-top" src="image/logo-3-small-image-740x440.jpg" alt="Card image cap"></a>
+                    <div class="service-card-body">
+                      <a class="service-card-head" href="thermalInkjet.html"><h5><span class="service-card-title text-capitalize">Thermal Inkjet Printers</span> </h5></a>
+                      <a href="thermalInkjet.html"><p class="service-card-text text-justify">Thermal Inkjet (TIJ) printers use standard ink cartridge systems and do not require any bottles of inks or solvent, making thermal inkjet printers clean and simple to use. Thermal inkjet printers use a drop ejection process, storing ink in a cartridge that regulates the pressure of the fluid..</p></a>
+                      <a class="service-card-btn" href="thermalInkjet.html">Read More <i class="fas fa-chevron-right ml-1"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                <div class="service-card" >
+                    <a href="thermalTransfer.html"><img class="card-img-top" src="image/newttoposter-740x440.png" alt="Card image cap"></a>
+                    <div class="service-card-body">
+                      <a class="service-card-head" href="thermalTransfer.html"><h5><span class="service-card-title text-capitalize">Thermal Transfer Overprinters</span> </h5></a>
+                      <a href="thermalTransfer.html"><p class="service-card-text text-justify">Thermal Transfer Overprinters (TTO’s) use a high-resolution thermal printhead to produce crisp, clear barcodes and information directly onto flexible packaging, labels or foil products. The thermal printhead, thermally transfers ink on a ribbon onto various types of poly film..</p></a>
+                      <a class="service-card-btn" href="thermalTransfer.html">Read More <i class="fas fa-chevron-right ml-1"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+  </div>
+  <!-- Printing Technology section ends here -->
+
+  <!-- Coding Solutions start here -->
+<div class="container">
+    <section class="printing-wrapper mb-5">
+        <div class="printing-custom-head mt-5 mb-4">
+            <h1 class="text-capitalize text-primary text-center">Coding Solutions</h1>
+        </div>
+        <div class="printing-custom-para text-center">
+            <p class="text-justify text-center">Encompassing every industry with our top of the line coding and marking solutions,
+                <br>
+                delivering and servicing your every requirement with utmost quality and care.
+                </p>
+        </div>
+    </section>
+    <section class="coding-solution mt-5 mb-5">
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 box">
+                <div class="coding-icon-box d-flex rounded mt-2 mb-2">
+                   <a class="d-flex" href="beverage.html"><i class="fas fa-wine-bottle"></i><h6 class="d-flex align-self-center ml-3">Beverages</h6></a> 
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                <div class="coding-icon-box d-flex rounded mt-2 mb-2">
+                   <a class="d-flex" href="chemical.html"><i class="fas fa-prescription-bottle-alt"></i><h6 class="d-flex align-self-center ml-3">Chemicals</h6></a> 
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                <div class="coding-icon-box d-flex rounded mt-2 mb-2">
+                   <a class="d-flex" href="automotive.html"><i class="fas fa-spray-can"></i><h6 class="d-flex align-self-center ml-3">Automotive</h6></a> 
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                <div class="coding-icon-box d-flex rounded mt-2 mb-2">
+                   <a class="d-flex" href="food.html"><i class="fas fa-hamburger"></i><h6 class="d-flex align-self-center ml-3">Food</h6></a> 
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                <div class="coding-icon-box d-flex rounded mt-2 mb-2">
+                   <a class="d-flex" href="plastic.html"><i class="fas fa-blender"></i><h6 class="d-flex align-self-center ml-3">Plastic</h6></a> 
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                <div class="coding-icon-box d-flex rounded mt-2 mb-2">
+                   <a class="d-flex" href="wirecable.html"> <i class="fas fa-network-wired"></i><h6 class="d-flex align-self-center ml-3">Wire & Cable</h6></a>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+  <!-- Coding solution ends here -->
+
+  <!-- Our Products start here -->
+<section class="our-product bg-white">
+    <h1 class="our-product-heading text-white text-center">Our Products</h1>
+    <div class="container">
+        <div class="row pb-5">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 mt-4">
+                <img src="image/menu.jpg" class="img-fluid" alt="Responsive image">
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 mt-4">
+                <h4>FASTER & MORE EFFICIENT</h4>
+                <p class="text-justify">Low ownership costs, ease of use, fast and error free coding, offers maximum efficiency and has a longer scheduled maintenance (upto 18 months).</p>
+                <h6>LINX 8820 & 8840</h6>
+                <ul class="mt-4">
+                    <div class="d-flex">
+                       <i class="far fa-check-circle mt-1 mr-3"></i><li class="text-justify policies">Print up to 6 lines</li>
+                    </div>
+                    <div class="d-flex">
+                       <i class="far fa-check-circle mt-1 mr-3"></i><li class="text-justify policies">Self-service with up to 18 months</li>
+                    </div>
+                    <div class="d-flex">
+                       <i class="far fa-check-circle mt-1 mr-3"></i><li class="text-justify policies">Printhead cleaning interval up to three months</li>
+                    </div>
+                </ul>
+                <a href="contactus.html" class="btn btn-background-slide">Get Quote</a>
+                <a href="8800.html" class="btn btn-background-slide learn-more ml-2">Learn More</a>
+            </div>
+        </div>
+        <div class="row pb-5">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 mt-4">
+                <h4>Linx CSL10 Fastest 10 W scribing laser coder</h4>
+                <p class="text-justify">Designed to be economical yet versatile, it is suitable for a wide range of laser marking applications. Produces complex variable codes and dynamic messages, even on high speed lines for quality coding on a wide range of materials. With a detachable marking head and connectors for easy installation</p>
+                <h6>Linx CSL10 & CSL30</h6>
+                <ul class="mt-4">
+                    <div class="d-flex">
+                       <i class="far fa-check-circle mt-1 mr-3"></i><li class="text-justify policies">Easy message creation</li>
+                    </div>
+                    <div class="d-flex">
+                       <i class="far fa-check-circle mt-1 mr-3"></i><li class="text-justify policies">Easy line integration & detachable marking head</li>
+                    </div>
+                    <div class="d-flex">
+                       <i class="far fa-check-circle mt-1 mr-3"></i><li class="text-justify policies">Reduce your coding errors and meet coding regulations</li>
+                    </div>
+                    <div class="d-flex">
+                       <i class="far fa-check-circle mt-1 mr-3"></i><li class="text-justify policies">Multiple beam delivery options</li>
+                    </div>
+                </ul>
+                <a href="contactus.html" class="btn btn-background-slide">Get Quote</a>
+                <a href="laserTechnology.html" class="btn btn-background-slide learn-more ml-2">Learn More</a>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 mt-4">
+                <img src="image/lasersample2-530x432.jpg" class="img-fluid" alt="Responsive image">
+            </div>
+        </div>
+        <div class="row pb-5">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 mt-4">
+                <img src="image/fluids2-530x432.jpg" class="img-fluid" alt="Responsive image">
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 mt-4">
+                <h4>Outstanding performance on most common materials,</h4>
+                <p class="text-justify">Our range of general-purpose black inks gives outstanding performance on most common materials, ideal for most general external packaging applications.</p>
+                <ul class="mt-4">
+                    <div class="d-flex">
+                       <i class="far fa-check-circle mt-1 mr-3"></i><li class="text-justify policies">Linx General Purpose Black Inks</li>
+                    </div>
+                    <div class="d-flex">
+                       <i class="far fa-check-circle mt-1 mr-3"></i><li class="text-justify policies">Linx Special Adherence Inks</li>
+                    </div>
+                    <div class="d-flex">
+                       <i class="far fa-check-circle mt-1 mr-3"></i><li class="text-justify policies">Food Grade Inks</li>
+                    </div>
+                    <div class="d-flex">
+                       <i class="far fa-check-circle mt-1 mr-3"></i><li class="text-justify policies">Linx Contrasting Inks</li>
+                    </div>
+                    <div class="d-flex">
+                       <i class="far fa-check-circle mt-1 mr-3"></i><li class="text-justify policies">Process Specific Inks</li>
+                    </div>
+                    <div class="d-flex">
+                       <i class="far fa-check-circle mt-1 mr-3"></i><li class="text-justify policies">Security (UV Readable) Inks</li>
+                    </div>
+                    <div class="d-flex">
+                       <i class="far fa-check-circle mt-1 mr-3"></i><li class="text-justify policies">Coloured Inks for Pale Substrates</li>
+                    </div>
+                    <div class="d-flex">
+                       <i class="far fa-check-circle mt-1 mr-3"></i><li class="text-justify policies">Large Character Marking</li>
+                    </div>
+                </ul>
+                <a href="contactus.html" class="btn btn-background-slide">Get Quote </a>
+                <a href="inknfluids.html" class="btn btn-background-slide learn-more ml-2">Learn More</a>
+            </div>
+        </div>
+    </div>
+</section>
+  <!-- Our Products ends here -->
+
+  <!-- Lease Section starts-->
+         <section class="lease-wrapper">
+            <div class="container">
+             <div class="row">
+                 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                     <div class="lease-head pt-2 mt-5">
+                         <h2 class="text-capitalize mb-4">Lease Machine & Equipment
+                            rather than buy it ?</h2>
+                     </div>
+                     <div class="lease-content">
+                         <p class="text-justify ">We also provide printing machines and support equipment like conveyors and rewinders on lease, based on seasonal and non – seasonal clients as well as customers who do not have CAPEX. This comes without any hidden blocks, the customer is free from investment, inventory, maintenance, AMCs and issues from printers.</p>
+                         <ul class="mt-4">
+                             <div class="d-flex ">
+                                <i class="far fa-check-circle mt-1 mr-3"></i><li>For seasonal businesses</li>
+                             </div>
+                             <div class="d-flex ">
+                                <i class="far fa-check-circle mt-1 mr-3"></i><li>Economical savings</li>
+                             </div>
+                             <div class="d-flex ">
+                                <i class="far fa-check-circle mt-1 mr-3"></i><li>Pay Per Code (PPC)</li>
+                             </div>
+                        </ul>
+                        <div class="mt-3 mb-5">
+                            <a class="btn btn-background-slide p-3" href="contactus.html">Contact Us<i class="fas fa-arrow-right ml-2"></i></a>
+                        </div>
+                    </div>
+                 </div>
+                 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 bg-white">
+                     <img src="image/leasebase1.png" alt="Responsive image" class="img-fluid">
+
+                 </div>
+             </div>
+            </div>
+         </section>
+     
+  <!-- Lease Section ends here -->
+
+   <!-- Contact us home page -->
+  <section class="contact-us" id="contact">
+      <div class="container">
+        <div class="row pt-5 pb-5">
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <h2 class="text-capitalize text-white mb-4 con-head"></h2>
+                <div class="contact-company-name">
+                    <h4 class="text-capitalize"><span class="comp-title text-white">Click vision </span> 
+                        <br>
+                        <span class="comp ml-2 text-white">international pvt ltd. </span> </h4>
+                        <ul class="mt-3">
+                        <li class="text-capitalize text-primary"><i class="fas fa-map-marker-alt"></i>
+                            <span class=" text-white ml-1"> Birgunj-24, Parsa, Near</span>
+                            <br>
+                            <span class="text-white ml-4">Bajarang Cinema (Nepal)</span> 
+                        </li>
+                        <li class="text-capitalize text-primary mt-2"><i class="fas fa-phone-square-alt"></i>
+                            <span class="text-white ml-1">mob:- 9802929313,</span>  
+                            <br>
+                            <span class="text-white ml-4"> 9802727699, 9802929101</span>
+                        </li>
+                        <li class="mt-2 text-primary"><i class="fas fa-envelope-square"></i>
+                            <span class="email ml-1">trade.cvi@gmail.com</span> 
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <h4 class="text-capitalize text-white mb-5 ml-2 mt-2 git"> in touch</h4>
+                <div class="contactus-form1 mt-2">
+                    <form>
+                        <div class="form-group">
+                          <input type="firstName" class="form-control" id="firstName" placeholder="First Name*">
+                        </div>
+                        <div class="form-group">
+                          <input type="lastName" class="form-control" id="lastName" placeholder="Last Name*">
+                        </div>
+                        <div class="form-group">
+                          <input type="companyPosition" class="form-control" id="companyPosition" placeholder="Compnay/Position*">
+                        </div>
+                        <div class="form-group">
+                         <input type="email" class="form-control" id="email" placeholder="E-mail*">
+                        </div>
+                        </form>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <div class="contactus-form2 mt-2">
+                    <form>
+                        <div class="form-group">
+                          <input type="telephone" class="form-control" id="telephone" placeholder="Telephone*">
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" rows="4" id="comment" name="text" placeholder="Your Message*"></textarea>
+                          </div>
+                          <button type="submit" class="btn btn-background-slide">Submit <i class="fas fa-chevron-right"></i></button>
+                        </form>
+                </div>
+            </div>
+        </div>
+      </div>
+  </section>
+
+<!-- Footer Part -->
+<footer class="footer" id="footer">
+    <div class="container">
+        <div class="row p-4">
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 footer-logo d-flex justify-content-center align-self-center">
+               <a href="index.html"><img src="image/main-logo.png" alt="Responsive image" class="img-fluid"></a> 
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 footer-product">
+                <div class="footer-head">
+                    <h5 class="text-capitalize text-white">products</h5>
+                </div>
+                <div class="footer-textwig mt-3">
+                    <p>
+                        <a class="text-capitalize text-white" href="conink.html">CIJ technology</a>
+                        <br>
+                        <a class="text-capitalize text-white" href="laserTechnology.html">Leaser technology</a>
+                        <br>
+                        <a class="text-capitalize text-white" href="thermalTransfer.html">TTO technology</a>
+                        <br>
+                        <!-- <a class="text-capitalize text-white" href="thermalInkjet.html">TIJ technology</a> -->
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 footer-company">
+                <div class="footer-head">
+                    <h5 class="text-capitalize text-white">company</h5>
+                </div>
+                <div class="footer-textwig mt-3">
+                    <p>
+                        <a class="text-capitalize text-white" href="about.html">about us</a>
+                        <br>
+                        <a class="text-capitalize text-white" href="solution.html">industry</a>
+                        <br>
+                        <a class="text-capitalize text-white" href="lease.html">lease</a>
+                        <br>
+                        <a class="text-capitalize text-white" href="support.html">support</a>
+                        <br>
+                        <a class="text-capitalize text-white" href="ewaste.html">e-waste</a>
+                        <br>
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 footer-follow">
+                <div class="footer-head">
+                    <h5 class="text-capitalize text-white">follow us</h5>
+                </div>
+                <p class="social-icon">
+                    <a class="text-capitalize text-white" href="https://www.facebook.com/cvipl"><i class="fab fa-facebook-square"></i></a>
+                    <a class="text-capitalize text-white" href="#"><i class="fab fa-twitter"></i></a>
+                    <a class="text-capitalize text-white" href="#"><i class="fab fa-linkedin"></i></a>
+                    <a class="text-capitalize text-white" href="#"><i class="fab fa-youtube"></i></a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="copyright-row">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h6 class="text-capitalize text-white copyright m-0 p-2">© 2021 click vision international pvt ltd. All Rights Reserved</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+ 
+    
+    <script src="script.js"></script>
+    <script type="text/javascript" src="jquery-3.3.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/all.min.js" integrity="sha512-UwcC/iaz5ziHX7V6LjSKaXgCuRRqbTp1QHpbOJ4l1nw2/boCfZ2KlFIqBUA/uRVF0onbREnY9do8rM/uT/ilqw==" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+</body>
+</html>

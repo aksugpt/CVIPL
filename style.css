@@ -1,0 +1,1603 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+  font-family: 'Poppins', sans-serif;
+  /* color: #999; */
+  background-color: #f5f5f5!important;
+}
+#menuToggle{
+    display: none !important;
+}
+.navbar{
+  -webkit-box-shadow: 5px 0.5px 5px 0px #888888;
+          box-shadow: 5px 0.5px 5px 0px #888888;
+}
+.navbar-brand img{
+    width: 8vw;
+    height: auto;
+}
+.navbar-link{
+    color: #002e5b;
+    font-weight: 600;
+}
+/* .navbar-link .fa-lightbulb:hover{
+  color: #fde428 !important;
+} */
+
+.navbar-link:hover, .dropdown .dropdown-item:hover, .dropdown:hover .dropbtn, .dropdown-drop:hover .drop-btn{
+    color: #6c98e1;
+    text-decoration: none;
+    border-radius: 4px;
+    -webkit-transition: 0.3s all linear;
+    -o-transition: 0.3s all linear;
+    transition: 0.3s all linear;
+    
+}
+/* slick slider portion */
+
+video{
+  position: static;
+  width: 100%;
+  /* right: 0;
+  bottom: 0; */
+  min-width: 100%; 
+  min-height: 100%;
+    /* max-width: 100%;
+    /* position: absolute; */
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+}
+.slider-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+.slider {
+    position: relative;
+    background: rgba(0,0,0,0.5);
+}
+.slider h2,
+.slider p {
+    margin: 0;
+}
+.slider-wrapper,
+.slider,
+.items {
+    max-height: 500px;
+    color: #fff;
+}
+.items {
+    padding: 13em;
+}
+.text-desc {
+    min-height: 200px;
+    background: #fff;
+    text-align: center;
+}
+/* hoverrable dropdown */
+.dropbtn {
+    background-color: #F8F9FA;
+    color: #002e5b;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    position: absolute;
+    background-color: #f1f1f1;
+    /* min-width: 160px; */
+    width: 940px;
+    top: 45%;
+    left: 50%;
+    -webkit-transform: translate(-73%, 4%);
+        -ms-transform: translate(-73%, 4%);
+            transform: translate(-73%, 4%);
+    height: auto;
+    -webkit-box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    padding: 0px 0px;
+  }
+  .dropdown .dropdown-content li{
+      list-style: none !important;
+      border-left: 1px solid #dedede !important;
+  }
+  .dropdown-content a{
+    color: #003893!important;
+    padding: 10px 10px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover{
+      
+      color: #6c98e1 !important;
+      border-radius: 4px;
+      -webkit-transition: 0.3s all linear;
+      -o-transition: 0.3s all linear;
+      transition: 0.3s all linear;
+    }
+  
+  .dropdown:hover .dropdown-content{display: -webkit-inline-box;display: -ms-inline-flexbox;display: inline-flex;}
+  
+ /* drop down about us */
+ .drop-btn {
+    background-color: #F8F9FA;
+    color: #002e5b;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+  }
+  
+  .dropdown-drop {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content-drop {
+    display: none;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    position: absolute;
+    width: 940px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-89%, 6%);
+        -ms-transform: translate(-89%, 6%);
+            transform: translate(-89%, 6%);
+    height: auto;
+    -webkit-box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    padding: 0px 0px;
+    background-color: #FFFFFF;
+  }
+  .dropdown-drop .dropdown-content-drop li{
+      list-style: none !important;
+      border-left: 1px solid #dedede !important;
+  }
+  .dropdown-content-drop a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content-drop a:hover{
+      /* background-color: #003893; */
+      color: #6c98e1 !important;
+      border-radius: 4px;
+      -webkit-transition: 0.3s all linear;
+      -o-transition: 0.3s all linear;
+      transition: 0.3s all linear;
+    }
+  
+  .dropdown-drop:hover .dropdown-content-drop{display: -webkit-inline-box;display: -ms-inline-flexbox;display: inline-flex;}
+  
+  .drop-sub{
+      width: 25%;
+      height: auto;
+  }
+  .sub-logo{
+      width: 15px;
+      height: auto;
+  }
+  .hamburger{
+    display: none;
+  }
+.sub-menu2 img, .sub-menu3 img{
+  width: 60vw;
+  height: auto;
+}
+
+
+  /* Printing Technology Section */
+  .printing-custom-head h1{
+    font-size: 52px !important;
+    color: #002e5b !important;
+    font-weight: 400;
+  }
+   .printing-custom-para p{
+    color: #243238 !important;
+    line-height: 24px;
+   }
+   .service-card img{
+    opacity: 1.0;
+}
+.service-card {
+  -webkit-box-shadow: 0px 0px 0px 0px;
+          box-shadow: 0px 0px 0px 0px;
+}
+
+.service-card img:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+.service-card-head{
+  text-decoration: none !important;
+}
+.service-card-text{
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+  line-height: 22px;
+  color: #999;
+}
+.service-card-title, .service-card-btn {
+    color: #6c98e1 !important;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+.fa-chevron-right{
+  color: #fde428 !important;
+}
+.service-card-btn:hover, .fa-check-circle{
+  color: #fde428 !important;
+  text-decoration: none;
+}
+/* .service-card-title:hover{
+  color: #6c98e1 !important; 
+} */
+.service-card-body{
+  font-size: 13px;
+  border: 3px solid #fff;
+  background: #fff;
+  border-top: 0;
+  padding: 35px 28px;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+.service-card-body a:hover{
+  text-decoration: none !important;
+}
+.service-card-body:hover{
+  background-color: #002e5b !important;
+  border-color: #002e5b !important;
+  color: #FFFFFF !important;
+  cursor: pointer;
+}
+.lease-head, .related-products h2{
+  color: #003893;
+  font-size: 36px;
+  font-weight: 700;
+}
+.lease-content p, .lease-content ul{
+  color: #243238;
+  line-height: 24px;
+  margin: 0 0 15px;
+}
+.lease-content ul li{
+  list-style: none;
+}
+  .btn-warning{
+    background-color: #fde428 !important;
+    border-color: #fde428 !important;
+  }
+  /* .btn-warning:hover{
+    background-color: #003893 !important;
+    border-color: #003893 !important;
+    color: #fff !important;
+    cursor: pointer;
+  } */
+    /* footer part */
+.footer-head{
+  border-bottom: 1px solid rgba(204,204,204,.5);
+}
+.footer-logo img{
+  width: 10vw;
+    height: auto;
+        background: white;
+    border-radius: 5px;
+}
+.footer{
+  background-color: #142ea0!important;
+}
+.social-icon{
+    font-size: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+.contactus-form2 textarea{
+  height: 92px;
+  
+}
+.contact-us{
+  background-color: #002e5b!important;
+}
+.contactus-form2{
+  margin-top: 85px !important;
+}
+.git::before{
+  content: "Get";
+  border-bottom: 3px solid #fde428;
+}
+.con-head::before{
+  content: "Contacts";
+  border-bottom: 3px solid #fde428;
+}
+.footer-textwig p a{
+  font-size: 14px;
+    font-weight: 400;
+}
+.footer-textwig p a:hover{
+  -webkit-text-decoration: underline #fde428 !important;
+          text-decoration: underline #fde428 !important;
+}
+.social-icon .fa-facebook-square:hover, .social-icon .fa-twitter:hover, .social-icon .fa-linkedin:hover, .social-icon .fa-youtube:hover{
+  color: #fde428;
+}
+.copyright-row{
+  background-color: #002e5b;
+}
+.copyright{
+  font-size: 12px;
+  font-weight: 400;
+}
+.text-danger{
+  color: #003893 !important;
+}
+.about-company::before{
+  content: "About Company";
+  border-bottom: 3px solid #fde428;
+}
+.Carrier::before{
+  content: "Carrier";
+  border-bottom: 3px solid #fde428;
+}
+.other::before{
+  content: "Others";
+  border-bottom: 3px solid #fde428;
+}
+.click-vision::before{
+  content: "CLick Vision";
+  border-bottom: 3px solid #fde428;
+}
+@media all and (max-width: 576px){
+  .contactus-form2{
+    margin-top: 0px !important;
+  }
+  
+}
+.coding-icon-box .fa-wine-bottle, .fa-prescription-bottle-alt, .fa-spray-can, .fa-hamburger, .fa-blender, .fa-network-wired{
+  font-size: 70px;
+  color: #002e5b;
+}
+.coding-icon-box{
+  /* border: 1px solid #999; */
+  -webkit-box-shadow: 0px 0px 1px 0px;
+          box-shadow: 0px 0px 1px 0px;
+  padding: 40px;
+}
+.coding-icon-box h6{
+  color: #002e5b;
+  font-size: 25px;
+}
+.our-product-heading, .conink-heading, .laser-heading, .thermal-heading, .contact-block h3{
+  background-color: #002e5b!important;
+  padding: 100px;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+/* Continuous Inkjet Printers */
+.conink-heading::before{
+  content: 'Con';
+  border-bottom: 3px solid #fde428;
+}
+.conink-head h4, .conink-sub-head, .conink-card-title, .laser-head, .laser-sub-head, .laser-card-title, .thermal-head, .thermal-sub-head, .thermal-card-title, .thermal-card-title1, .thermal-transfer-head1, .thermal-transfer-head2, .thermal-transfer-head3, .thermal-transfer-card-title, .linx-8800 h1, .linx-8800 h5, .printing-ability h3{
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 34px;
+  color: #002e5b;
+}
+.quote{
+  background-color: #fde428;
+}
+.conink-card-head:hover, .laser-card-head:hover, .thermal-card-head{
+  text-decoration: none !important; 
+}
+.conink-card-title:hover, .laser-card-title:hover, .thermal-card-title:hover, .thermal-transfer-card-title:hover{
+  color: #142ea0 !important;
+}
+.conink-head h4::before{
+  content: 'Wh';
+  border-bottom: 3px solid #fde428;
+}
+.conink-head p, .laser-wrapper p{
+  color: #243238;
+  line-height: 24px;
+    margin: 0 0 15px;
+}
+.conink-card-title::before, .laser-card-title::before, .thermal-transfer-card-title:before, .conink-sub-head::before, .linx-8800 h1:before, .key-benefits-content h3::before, .video-section-head h2::before, .general-info h4::before{
+  content: 'Linx';
+  border-bottom: 3px solid #fde428;
+}
+.conink-card-body, .laser-card-body, .thermal-card-body{
+  background-color: #F4F4F4;
+}
+.quote h2{
+  font-size: 20px;
+  color: #002e5b;
+  line-height: 18px;
+  background-color: #fde428;
+  padding: 50px;
+  font-weight: 700;
+}
+.quote-btn {
+  position: absolute;
+  top: 51%;
+  left: 89%;
+  -webkit-transform: translate(-48%, -145%);
+      -ms-transform: translate(-48%, -145%);
+          transform: translate(-48%, -145%);
+}
+.thumbnail-image-section{
+  width: 100vw;
+  height: auto;
+}
+.item-thumbnail img{
+  width: 60vw;
+  height: auto;
+}
+.item-info{
+  position: absolute;
+  top: 80%;
+  left: 25%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.item-info h5{
+  color: #fff;
+  font-size: 14px;
+  margin-bottom: 5px;
+  padding: 0;
+  font-weight: 700;
+}
+.item-info a, .item-info1 a{
+  color: #fff;
+  font-size: 12px;
+  margin-bottom: 5px;
+  padding: 0;
+  text-decoration: none !important;
+}
+.item-info1 h5{
+  font-size: 14px;
+}
+.item-info1{
+  position: absolute;
+    top: 75%;
+    left: 36%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+}
+
+.laser-heading::before, .laser-head::before{
+  content: 'Las';
+  border-bottom: 3px solid #fde428;
+}
+.laser-sub-head::before{
+  content: 'How';
+  border-bottom: 3px solid #fde428;
+}
+.thermal-heading::before{
+  content: 'The';
+  border-bottom: 3px solid #fde428;
+}
+.thermal-head::before{
+  content: 'Wha';
+  border-bottom: 3px solid #fde428;
+}
+.thermal-sub-head::before{
+  content: 'Pol';
+  border-bottom: 3px solid #fde428;
+}
+.thermal-card-title::before{
+  content: 'PSJ';
+  border-bottom: 3px solid #fde428;
+}
+.thermal-card-title1::before{
+  content: 'Poly';
+  border-bottom: 3px solid #fde428;
+}
+.thermal-transfer-head1::before{
+  content: 'TTO';
+  border-bottom: 3px solid #fde428;
+}
+.thermal-transfer-head2::before{
+  content: 'Adv';
+  border-bottom: 3px solid #fde428;
+}
+.thermal-transfer-head3::before{
+  content: 'Hig';
+  border-bottom: 3px solid #fde428;
+}
+.contact-block h3::before{
+  content: 'Let';
+  border-bottom: 3px solid #fde428;
+}
+.contact-para{
+  color: #f5f5f5;
+  font-size: 15px;
+
+}
+.contact-block{
+  position: relative;
+}
+.contact-8800-btn{
+    top: 50%;
+    left: 90%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    padding: 15px;
+    font-weight: 700;
+}
+.key-benefits h2, .additional-benefits h2, .video-section-head h2, .linx-8800 h1{
+    font-size: 36px;
+    font-weight: 700;
+    color: #002e5b;
+}
+.key-benefits-content h2::before{
+   content: 'Key';
+  border-bottom: 3px solid #fde428;
+}
+.key-benefits-content ul li, .additional-benefits ul li, .printing-ability ul li, .lease-section ul li{
+  list-style: none !important;
+}
+.additional-benefits h2::before{
+  content: 'Add';
+  border-bottom: 3px solid #fde428;
+
+}
+.bg-secondary{
+  background-color: #E4E3EA !important;
+}
+.technical-spec h2, .auto-content h1, .chemical-content h1, .rubber-content h1, .beverage-content h1, .plastic-content h1, .food-content h1, .auto-content h1, .barcode-content h1, .wirecable-content h1, .papercard-content h1, .glass-content h1, .onfood-content h1, .metal-content h1, .support-section h1,  .our-product h4 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #002e5b;
+}
+.fa-dharmachakra{
+  color: #5472d2;
+  font-size: 40px;
+}
+.fa-crosshairs{
+  color: #6dab3c;
+  font-size: 40px;
+}
+.fa-compress-arrows-alt{
+  color: #f7be68;
+  font-size: 40px;
+}
+.printing-ability ul li{
+  font-size: 14px;
+}
+.linx-8800, .linx-8800-carousel, .key-benefits-content, .key-benefits-image{
+  max-width: 60% !important;
+  height: auto;
+}
+.datasheet-section img{
+  width: 12vw;
+  height: auto;
+}
+.data-sheet {
+  padding: 40px;
+  background-color: #E4E3EA;
+}
+.datasheet-section h6{
+  color: #243238;
+  font-size: 18px;
+  font-weight: 700;
+}
+.btn-warning{
+  background-color: #fde428;
+}
+.datasheet-section{
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+}
+.related-products .card{
+  -webkit-box-shadow: 0px 0px 4px 0px !important;
+          box-shadow: 0px 0px 4px 0px !important;
+}
+.auto-back{
+  background-image: url('image/auto.png');
+}
+.food-back{
+  background-image: url('image/food-industry-1.jpg');
+}
+.chemical-back{
+  background-image: url('image/chemical\ \(1\).jpg');
+}
+.beverage-back{
+  background-image: url('image/beverages.jpg');
+}
+.barcode-back{
+  background-image: url('image/printer-12.png');
+}
+.wirecable-back{
+  background-image: url('image/wire-2.jpg');
+}
+.plastic-back{
+  background-image: url('image/PLASTIC-2Q.jpg');
+}
+.papercard-back{
+  background-image: url('image/Paper1.jpg');
+}
+.rubber-back{
+  background-image: url('image/TIRE.jpg');
+}
+.glass-back {
+  background-image: url('image/glass1-1\ \(1\).jpg');
+}
+.onfood-back{
+  background-image: url('image/food-1\ \(1\).jpg');
+}
+.metal-back{
+  background-image: url('image/Metal1.jpg');
+}
+.lease-bac{
+  background-image: url('image/185-scaled.jpg');
+}
+.ewaste-back{
+  background-image: url('image/1428-scaled.jpg');
+}
+.support-back{
+  background-image: url('image/1391-scaled.jpg');
+}
+.auto-back, .chemical-back, .food-back, .beverage-back, .barcode-back, .wirecable-back, .plastic-back, .papercard-back, .rubber-back, .glass-back, .onfood-back, .metal-back, .lease-bac, .ewaste-back, .support-back{
+  background-position: center!important;
+  background-repeat: no-repeat!important;
+  background-size: cover!important;
+  height: 400px;
+  width: 100%;
+}
+.auto-content, .chemical-content, .food-content, .beverage-content, .barcode-content, .wirecable-content, .plastic-content, .papercard-content, .rubber-content, .glass-content, .onfood-content, .metal-content, .lease-section, .support-section{
+  margin: 0px 150px;
+}
+.auto-content h1::before{
+  content: 'Auto';
+  border-bottom: 3px solid #fde428;
+}
+.chemical-content h1::before{
+  content: 'Che';
+  border-bottom: 3px solid #fde428;
+}
+.food-content h1::before, .onfood-content h1::before{
+  content: 'Fo';
+  border-bottom: 3px solid #fde428;
+}
+.beverage-content h1::before{
+  content: 'Bev';
+  border-bottom: 3px solid #fde428;
+}
+.barcode-content h1::before{
+  content: 'Bar';
+  border-bottom: 3px solid #fde428;
+}
+.wirecable-content h1::before{
+  content: 'Wire';
+  border-bottom: 3px solid #fde428;
+}
+.plastic-content h1::before{
+  content: 'Pla';
+  border-bottom: 3px solid #fde428;
+}
+.papercard-content h1::before{
+  content: 'Paper';
+  border-bottom: 3px solid #fde428;
+}
+.rubber-content h1::before{
+  content: 'Print';
+  border-bottom: 3px solid #fde428;
+}
+.glass-content h1::before{
+  content: 'Gla';
+  border-bottom: 3px solid #fde428;
+}
+.metal-content h1::before{
+  content: 'Met';
+  border-bottom: 3px solid #fde428;
+}
+.lease-heading::before{
+  content: 'Lea';
+  border-bottom: 3px solid #fde428;
+}
+.lease-sub-head::before{
+  content: 'Why';
+  border-bottom: 3px solid #fde428;
+}
+.auto-content p, .chemical-content p, .food-content p, .food-content ul li, .beverage-content p, .barcode-content p, .wirecable-content p, .wirecable-content li, .plastic-content p, .plastic-content li, .papercard-content p, .rubber-content p, .glass-content p, .onfood-content p, .metal-content p{
+  font-size: 14px;
+}
+.food-content ul li, .barcode-content ul li, .wirecable-content ul li, .plastic-content ul li, .ewaste-handling ul li, ul li{
+  list-style: none !important;
+}
+.img-500{
+  width: 85%;
+  height: auto;
+}
+.img-1000{
+    width: 81%;
+    height: auto;
+}
+.job-work{
+  background: #F2F2F2 !important;
+  border-left: 5px solid #FDE428;
+  font-size: 15px;
+  font-weight: 400;
+}
+.job-work h6{
+  font-size: 15px;
+    font-weight: 300;
+}
+.ewaste-info h2, .ewaste-handling h2, .policy, .rohs h2, .electronic-recycle h2, .general-info h4{
+   font-size: 26px;
+   font-weight: 700;
+   color: #002e5b;
+}
+.ewaste-info p, .ewaste-handling li, .policies, .rohs p, .electronic-recycle p{
+  color: #243238;
+  line-height: 24px;
+    margin: 0 0 15px;
+    font-size: 14px !important;
+}
+.dos-dont h2, .our-product h6{
+  font-size: 20px;
+  color: #002e5b;
+}
+.get-quote{
+  position: absolute;
+  top: 50%;
+    left: 90%;
+    -webkit-transform: translate(-50%, -155%);
+        -ms-transform: translate(-50%, -155%);
+            transform: translate(-50%, -155%);
+  color: #fff;
+  border-color: #002e5b;
+  background: #002e5b;
+  border-width: 1px;
+}
+.learn-more{
+  border: 1px solid #6C98E1;
+  background-color: white;
+  color: #6C98E1;
+  font-weight: 500;
+}
+.learn-more:hover{
+  border-color: #002e5b;
+  /* background: #002e5b; */
+}
+.learn-more, .get-quote{
+  padding: 12px;
+}
+.general-img{
+  width: 45%;
+  height: auto;
+}
+.general-info{
+  width: 55%;
+  height: auto;
+}
+.services .row{
+  margin-top: 40px;
+}
+.lease-section h1{
+  font-size: 26px;
+}
+.lease-section li, .card-body p{
+  font-size: 13px;
+}
+.card-body h5{
+  font-size: 16px;
+}
+.additional-benefits-content h2{
+  margin-top: 0px !important;
+}
+.related-products .card{
+  margin-top: 20px;
+}
+ .coding-icon-box, .fa-wine-bottle, .card-btn, .card-title, .dropdown-content a, .conink-card-title, .laser-card-title, .thermal-transfer-card-title, .navbar-link, .dropbtn, .drop-btn:hover{
+    background: -webkit-gradient(linear, left top, right top, color-stop(50%, rgb(0, 46, 91)), color-stop(50%, #FF5858), to(#CC2E5D));
+    background: -o-linear-gradient(left, rgb(0, 46, 91) 50%, #FF5858 50%, #CC2E5D);
+    background: linear-gradient(to right, rgb(0, 46, 91) 50%, #FF5858 50%, #CC2E5D);
+    background-size: 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-transition: 0.5s ease-out;
+    -o-transition: 0.5s ease-out;
+    transition: 0.5s ease-out;
+    cursor: pointer;
+}
+.coding-icon-box:hover, .fa-wine-bottle:hover, .card-btn:hover, .card-title:hover, .dropdown-content a:hover, .conink-card-title:hover, .laser-card-title:hover, .thermal-transfer-card-title:hover, .navbar-link:hover, .dropbtn:hover, .drop-btn:hover{
+  background-position: -100%;
+}
+#menuToggle
+{
+  float: right;
+  display: block;
+  position: relative;
+  top: 50%;
+  left: -80%;
+  -webkit-transform: translate(-50%, 170%);
+      -ms-transform: translate(-50%, 170%);
+          transform: translate(-50%, 170%);
+  z-index: 1;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
+}
+
+#menuToggle a
+{
+  text-decoration: none;
+  color: #232323;
+  
+  -webkit-transition: color 0.3s ease;
+  
+  -o-transition: color 0.3s ease;
+  
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover
+{
+  color: tomato;
+}
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0; 
+  z-index: 2; 
+  -webkit-touch-callout: none;
+}
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: #cdcdcd;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  -webkit-transform-origin: 4px 0px;
+  
+      -ms-transform-origin: 4px 0px;
+  
+          transform-origin: 4px 0px;
+  
+  -webkit-transition: background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease,
+              -webkit-transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  
+  transition: background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease,
+              -webkit-transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  
+  -o-transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease,
+              -webkit-transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menuToggle span:first-child
+{
+  -webkit-transform-origin: 0% 0%;
+      -ms-transform-origin: 0% 0%;
+          transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  -webkit-transform-origin: 0% 100%;
+      -ms-transform-origin: 0% 100%;
+          transform-origin: 0% 100%;
+}
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  -webkit-transform: rotate(45deg) translate(-2px, -1px);
+      -ms-transform: rotate(45deg) translate(-2px, -1px);
+          transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  -webkit-transform: rotate(0deg) scale(0.2, 0.2);
+      -ms-transform: rotate(0deg) scale(0.2, 0.2);
+          transform: rotate(0deg) scale(0.2, 0.2);
+}
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  -webkit-transform: rotate(-45deg) translate(0, -1px);
+      -ms-transform: rotate(-45deg) translate(0, -1px);
+          transform: rotate(-45deg) translate(0, -1px);
+}
+#menu
+{
+  position: absolute;
+  width: 100vw;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  -webkit-transform-origin: 0% 0%;
+      -ms-transform-origin: 0% 0%;
+          transform-origin: 0% 0%;
+  -webkit-transform: translate(-100%, 0);
+      -ms-transform: translate(-100%, 0);
+          transform: translate(-100%, 0);
+  
+  -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  
+  transition: -webkit-transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  
+  -o-transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0), -webkit-transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 15px;
+}
+#menuToggle input:checked ~ ul
+{
+  -webkit-transform: none;
+      -ms-transform: none;
+          transform: none;
+}
+#menu{
+  visibility: hidden;
+}
+.brand-logo{
+  display: none;
+}
+#menu img{
+  float: right;
+  width: 22vw;
+  position: absolute;
+  top: 23%;
+  left: 85%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.nav-head{
+  background-color: #002E5B;
+  padding: 5px;
+  justify-content: space-evenly;
+}
+.nav-head h6{
+  align-items: center;
+    display: flex;
+  color: #FFF;
+  font-size: 15px;
+  font-weight: 300 !important;
+  margin-bottom: 0px !important;
+}
+.dropdown-menu.show{
+  background-color: #002E5B;
+
+}
+.dropdown-item{
+  color: #FFF;
+}
+.fa-phone-alt, .fa-envelope-square, .fa-map-marker-alt{
+  color: #fde428;
+}
+.dropdown-menu{
+  z-index: 10000000;
+}
+.sub-menu3 li a{
+  font-size: 15px;
+}
+
+/* .h1:after, .h2:after, .h3:after, .h4:after, .h5:after, .h6:after, h1:after, h2:after, h3:after, h4:after, h5:after, h6:after {
+  content: '';
+  display: block;
+  width: 52px;
+  height: 3px;
+  background: #6c98e1;
+  margin: 4px 0 0;
+} */
+/* media quries */
+@media all and (max-width: 1440px){
+  .dropdown-content, .dropdown-content-drop{
+    width: 950px;
+    height: auto;
+  }
+}
+@media all and (max-width: 1024px){
+  .service-card-body{
+    height: 320px !important;
+  }
+  .dropdown-content, .dropdown-content-drop{
+    width: 940px;
+    height: auto;
+  }
+  .dropdown-content{
+    -webkit-transform: translate(-38%, 4%);
+        -ms-transform: translate(-38%, 4%);
+            transform: translate(-38%, 4%);
+  }
+  .dropdown-content-drop{
+    -webkit-transform: translate(-62%, 6%);
+        -ms-transform: translate(-62%, 6%);
+            transform: translate(-62%, 6%);
+  }
+}
+@media all and (max-width: 768px) {
+    .conink-head h4{
+      font-size: 19px;
+    }
+    .item-thumbnail img{
+      width: 100vw;
+      height: auto;
+    }
+    .item-info h5, .item-info1 h5{
+      font-size: 14px;
+    }
+    .item-info a, .item-info1 a{
+      font-size: 10px;
+    }
+    .item-info{
+      position: absolute;
+    top: 70%;
+    left: 35%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    }
+    .item-info1 {
+      position: absolute;
+      top: 65%;
+      left: 38%;
+      -webkit-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+  }
+  .quote-btn {
+    position: absolute;
+    top: 50%;
+    left: 87%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  .quote h2{
+    font-size: 15px;
+  }
+  .our-product-heading, .conink-heading{
+    padding: 80px !important;
+  }
+  .thumbnail-image-section {
+    width: 175vw;
+    height: auto;
+  }
+  .hamburger, .search-bar {
+    display: block !important;
+  }
+  .navbar-nav{
+    /* display: none !important; */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    position: relative;
+  }
+  .navbar-brand img{
+     width: 12vw !important;
+     height: auto;
+  }
+  .ham{
+    font-size: 12px;
+  }
+  .dropdown-content-drop{
+    width: 940px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-76%, 4%);
+        -ms-transform: translate(-76%, 4%);
+            transform: translate(-76%, 4%);
+  }
+  .dropdown-content{
+    width: 940px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-51%, 6%);
+        -ms-transform: translate(-51%, 6%);
+            transform: translate(-51%, 6%);
+  }
+  .linx-8800 h5{
+    font-size: 18px;
+  }
+  
+  .linx-8800 p, .benefits-text li{
+    font-size: 14px !important;
+  }
+  .contact-block h3{
+    padding: 60px !important;
+  }
+  .key-benefits-content h3{
+    font-size: 20px;
+  }
+  .printing-ability ul li{
+    font-size: 12px;
+    word-spacing: -1px;
+  }
+  .auto-content, .chemical-content, .food-content, .beverage-content, .barcode-content, .wirecable-content {
+    margin: 0px 100px;
+}  
+.coding-icon-box{
+  padding: 20px !important;
+}
+.coding-icon-box .fa-wine-bottle, .fa-prescription-bottle-alt, .fa-spray-can, .fa-hamburger, .fa-blender, .fa-network-wired {
+  font-size: 40px;
+}
+.coding-icon-box h6, .comp {
+  font-size: 15px;
+}
+.technical-spec h2, .lease-wrapper h2, .auto-content h1, .chemical-content h1, .rubber-content h1, .beverage-content h1, .plastic-content h1, .food-content h1, .auto-content h1, .barcode-content h1, .wirecable-content h1, .papercard-content h1, .glass-content h1, .onfood-content h1, .metal-content h1, .support-section h1, .our-product h4 {
+  font-size: 25px;
+}
+.our-product p, .lease-content p, .contact-company-name span, .footer-product, .footer-company{
+  font-size: 12px;
+}
+.dos-dont h2, .our-product h6 {
+  font-size: 18px;
+}
+.ewaste-info p, .ewaste-handling li, .policies, .rohs p, .electronic-recycle p, .lease-content li {
+  margin: 0 0 5px;
+  font-size: 12px !important;
+}
+.comp-title {
+  font-size: 30px !important;
+}
+.footer-logo img {
+  width: 15vw;
+}
+.social-icon {
+  font-size: 25px;
+}
+.services .row {
+  margin-top: 0px !important;
+}
+.auto-content, .chemical-content, .food-content, .beverage-content, .barcode-content, .wirecable-content, .plastic-content, .papercard-content, .rubber-content, .glass-content, .onfood-content, .metal-content, .lease-section, .support-section {
+  margin: 0px 100px;
+}
+.lease-section p, .support-section p, .thermal-transfer-wrapper p{
+  font-size: 13px !important;
+  margin-top: 5px;
+}
+.ewaste-info h2, .ewaste-handling h2, .policy, .rohs h2, .electronic-recycle h2, .general-info h4 {
+  font-size: 20px;
+}
+.dropdown-content, .dropdown-content-drop{
+  width: 720px;
+  height: auto;
+}
+
+.dropdown-content a, .dropdown-content-drop a, .sub-menu5 h6 {
+  padding: 10px 10px;
+  font-size: 10px;
+}
+.dropdown-content li{
+  width: 31vw;
+}
+.general-info{
+  margin-left: 40px !important;
+}
+.nav-head h6 {
+  font-size: 9px;
+}
+.services .row{
+  margin-top: 10px !important;
+}
+}
+@media all and (max-width: 426px) {
+  .our-product-heading, .conink-heading {
+    padding: 40px !important;
+    font-size: 28px !important;
+  }
+  .conink, .thermal-transfer{
+    display: block !important;
+  }
+  .conink-wrapper{
+    margin-right: 0px !important;
+  }
+  .item-info h5, .item-info1 h5 {
+    font-size: 14px;
+  }
+  .item-info1 {
+    position: absolute;
+    top: 80%;
+    left: 30%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  .item-info {
+    position: absolute;
+    top: 80%;
+    left: 16%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  .quote-btn{
+    left: 78%;
+    font-size: 10px;
+  }
+  .quote h2 {
+    font-size: 16px;
+    width: 315px;
+  }
+  .laser-section, .thermal-inkjet, .thumbnail-image-section, .general{
+    display: block !important;
+  }
+  .laser-wph, .laser-wrapper, .thermal-inkjet-section, .thermal-transfer-section{
+    margin-right: 0px !important;
+  }
+  .conink-head p, .laser-wrapper p, .thermal-wrapper p, .thermal-card-text, .thermal-transfer-wrapper p{
+    font-size: 12px !important;
+    /* letter-spacing: 1px !important; */
+  }
+  .conink-head h4, .conink-sub-head, .conink-card-title, .laser-head, .laser-sub-head, .laser-card-title, .thermal-head, .thermal-sub-head, .thermal-transfer-head1, .thermal-transfer-head2, .thermal-transfer-head3, .thermal-transfer-head1, .thermal-transfer-head2, .thermal-transfer-head3{
+    font-size: 20px !important;
+    /* letter-spacing: 1px !important; */
+  }
+  .thumbnail-image-section {
+    width: 93vw;
+    height: auto;
+  }
+  .our-product-heading, .conink-heading, .thermal-heading{
+    padding: 40px !important;
+    font-size: 16px;
+  }
+ .thermal-card-title, .thermal-card-title1, .thermal-transfer-card-title{
+   font-size: 20px;
+ }
+ .linx-8800 h1{
+   font-size: 20px;
+ }
+  .linx-8800-wrapper{
+   display: block !important;
+ }
+  .contact-block h3 {
+   padding: 40px !important;
+}
+  .contact-block h3, .technical-spec h2, .printing-capability h3{
+   font-size: 22px;
+ }
+ .printing-capability h3 br, .contact-company-name li br{
+   display: none !important;
+ }
+ .contact-company-name li span{
+  margin-left: 0px !important;
+ }
+  .contact-para p{
+   font-size: 9px;
+ }
+  .contact-8800-btn {
+    left: 84%;
+    padding: 6px;
+ }
+ .key-benefits, .additional-benefits, .video-section {
+   display: block !important;
+ }
+ .video-section{
+   padding: 10px !important;
+ }
+ .linx-8800 p, .benefits-text li {
+  font-size: 12px !important;
+}
+.benefits-text{
+  font-size: 12px;
+}
+.additional-benefits-content h2, .key-benefits-content  h2{
+  font-size: 32px;
+}
+.video-section-head h2{
+  font-size: 20px !important;
+}
+.linx-8800, .linx-8800-carousel, .key-benefits-content, .key-benefits-image {
+  max-width: 100% !important;
+  height: auto;
+}
+.datasheet-section img {
+  width: 20vw;
+  height: auto;
+}
+.data-sheet {
+  padding: 20px !important;
+}
+.auto-content, .chemical-content, .food-content {
+  margin: 0px 20px;
+}
+.technical-spec h2, .auto-content h1, .chemical-content h1, .food-content h1, .lease-section h1{
+  font-size: 26px;
+}
+.printing-custom-head h1 {
+  font-size: 40px !important;
+}
+.printing-custom-para p, .lease-section p, .lease-section li, .support-section p, .general-info p {
+  font-size: 13px;
+  margin-bottom: 0px;
+}
+.service-card-body {
+  height: auto;
+  margin-bottom: 20px;
+}
+.learn-more, .get-quote {
+  padding: 8px;
+}
+.lease-content a{
+  padding: 8px !important;
+}
+.printing-custom-para{
+  margin-bottom: 20px !important;
+}
+.printing-custom-head{
+  margin-top: 1rem !important;  
+}
+.auto-content, .chemical-content, .food-content, .beverage-content, .barcode-content, .wirecable-content, .auto-content, .chemical-content, .food-content, .beverage-content, .barcode-content, .wirecable-content, .plastic-content, .papercard-content, .rubber-content, .glass-content, .onfood-content, .metal-content, .lease-section, .support-section, .auto-content, .chemical-content, .food-content, .beverage-content, .barcode-content, .wirecable-content, .plastic-content, .papercard-content, .rubber-content, .glass-content, .onfood-content, .metal-content, .lease-section, .support-section {
+  margin: 0px 20px !important;
+}
+.industry-name, .industry-name {
+  font-size: 25px;
+  margin: 15px 0px;
+}
+.auto-back, .chemical-back, .food-back, .beverage-back, .barcode-back, .wirecable-back, .plastic-back, .papercard-back, .rubber-back, .glass-back, .onfood-back, .metal-back, .lease-bac, .ewaste-back, .support-back, .auto-back, .chemical-back, .food-back, .beverage-back, .barcode-back, .wirecable-back, .plastic-back, .papercard-back, .rubber-back, .glass-back, .onfood-back, .metal-back, .lease-bac, .ewaste-back, .support-back {
+  height: 200px !important;
+}
+.dos-dont div{
+  margin-bottom: 0px !important;
+}
+.contact-head{
+  font-size: 30px;
+}
+.navbar, .nav-head{
+  display: none !important;
+}
+#menu, #menuToggle{
+  display: block !important;
+  visibility: visible;
+}
+.brand-logo{
+  display: block !important;
+}
+.brand-logo img{
+  float: right;
+  width: 20vw;
+  height: auto;
+  cursor: pointer;
+}
+.our-product-heading, .conink-heading, .laser-heading, .thermal-heading, .contact-block h3 {
+  padding: 40px;
+}
+.get-quote {
+  top: 50%;
+  left: 80%;
+  -webkit-transform: translate(-50%, -250%);
+      -ms-transform: translate(-50%, -250%);
+          transform: translate(-50%, -250%);
+}
+.general{
+    padding: 1rem!important;
+}
+.general-img, .general-info {
+  margin-top: 10px;
+  width: 100%;
+  height: auto;
+}
+.general-info {
+  margin-left: 0px !important;
+}
+.general-info div{
+  margin-top: 10px;
+}
+.general-info h4{
+  font-size: 15px !important;
+}
+
+}
+@media all and (max-width: 376px){
+  .quote h2 {
+    font-size: 13px;
+    width: 280px !important;
+  }
+  .linx-8800 h5 {
+    font-size: 16px;
+  }
+    .additional-benefits-content h2, .key-benefits-content h2 {
+     font-size: 30px;
+  }
+  .printing-custom-head h1 {
+    font-size: 29px !important;
+}
+.service-card-text {
+  font-size: 12px;
+}
+.technical-spec h2, .lease-wrapper h2, .auto-content h1, .chemical-content h1, .rubber-content h1, .beverage-content h1, .plastic-content h1, .food-content h1, .auto-content h1, .barcode-content h1, .wirecable-content h1, .papercard-content h1, .glass-content h1, .onfood-content h1, .metal-content h1, .support-section h1, .our-product h4 {
+  font-size: 19px;
+}
+.dos-dont h2, .our-product h6 {
+  font-size: 15px;
+}
+.printing-wrapper, .coding-solution{
+  margin-top: 0px !important;
+}
+.printing-wrapper{
+  margin-bottom: 0px !important;
+}
+
+
+
+}
+
+@media all and (max-width: 325px) {
+  .our-product-heading, .conink-heading {
+    padding: 30px !important;
+    font-size: 19px !important;
+  }
+  .conink-head h4 {
+    font-size: 15px;
+  }
+  .conink-head p{
+    font-size: 11px;
+  }
+  .quote h2 {
+    font-size: 13px;
+    width: 280px;
+  }
+  .quote-btn{
+    font-size: 8px;
+  }
+  .item-info1{
+    left: 25%;
+  }
+  .thumbnail-image-section {
+    width: 90vw;
+    height: auto;
+  }
+.slider-wrapper, .slider, .items {
+  max-height: 160px;
+  color: #fff;
+  }
+  .linx-8800 h5 {
+    font-size: 13px;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+  }
+  .linx-8800 p, .benefits-text li {
+    font-size: 11px !important;
+  }
+  .linx-8800 h1{
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+  }
+  .additional-benefits-content h2, .key-benefits-content h2 {
+    font-size: 24px;
+}
+.video-section-head h2 {
+  font-size: 16px !important;
+}
+.contact-block h3 {
+  padding: 31px !important;
+}
+.contact-block h3, .technical-spec h2, .printing-capability h3 {
+  font-size: 16px;
+}
+.contact-para p {
+  font-size: 6px;
+}
+.contact-8800-btn {
+  left: 82%;
+  padding: 4px;
+  font-weight: 500;
+  
+}
+.our-product-heading, .conink-heading, .laser-heading, .thermal-heading, .contact-block h3, .our-product-heading, .conink-heading, .laser-heading, .thermal-heading, .contact-block h3, .our-product-heading, .conink-heading, .thermal-heading {
+  padding: 20px !important;
+  font-size: 20px !important;
+}
+#menu {
+  margin: -115px 0 0 -15px;
+  padding: 50px;
+  padding-top: 120px;
+}
+#menuToggle {
+  -webkit-transform: translate(-50%, 105%);
+      -ms-transform: translate(-50%, 105%);
+          transform: translate(-50%, 105%);
+}
+#menu img {
+  top: 26%;
+  left: 85%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.quote h2 {
+  line-height: 18px;
+  padding: 30px;
+  width: 100% !important;
+}
+.get-quote {
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.about-wrapper p, .about-wrapper ol li{
+  font-size: 13px !important;
+}
+}
+
+
+
+
+ 
